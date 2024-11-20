@@ -1,0 +1,45 @@
+To find the day of the week for a given date using aptitude techniques, you can use **Zeller's Congruence**. This is a formula that allows you to calculate the day of the week for any date in history. Here's a step-by-step guide on how to do it manually:
+
+### Zeller's Congruence Formula:
+For dates in the Gregorian calendar (after October 15, 1582):
+\[
+h = \left( q + \left\lfloor \frac{{13(m+1)}}{5} \right\rfloor + K + \left\lfloor \frac{K}{4} \right\rfloor + \left\lfloor \frac{J}{4} \right\rfloor + 5J \right) \mod 7
+\]
+Where:
+- **h** is the day of the week (0 = Saturday, 1 = Sunday, 2 = Monday, ..., 6 = Friday)
+- **q** is the day of the month
+- **m** is the month (3 = March, 4 = April, ..., 12 = December; January and February are treated as months 13 and 14 of the previous year)
+- **K** is the year of the century (i.e., year mod 100)
+- **J** is the century (i.e., year // 100)
+
+### Steps to calculate for 15 August 1947:
+1. **Date Breakdown**:
+   - Day: **15**
+   - Month: **August** (so, m = 8)
+   - Year: **1947** (so, K = 47 and J = 19)
+
+2. **Plug into the formula**:
+   \[
+   h = \left( 15 + \left\lfloor \frac{{13(8+1)}}{5} \right\rfloor + 47 + \left\lfloor \frac{47}{4} \right\rfloor + \left\lfloor \frac{19}{4} \right\rfloor + 5 \times 19 \right) \mod 7
+   \]
+
+3. **Simplify**:
+   - \(\left\lfloor \frac{{13(9)}}{5} \right\rfloor = \left\lfloor \frac{{117}}{5} \right\rfloor = 23\)
+   - \(\left\lfloor \frac{47}{4} \right\rfloor = 11\)
+   - \(\left\lfloor \frac{19}{4} \right\rfloor = 4\)
+   - \(5 \times 19 = 95\)
+
+   So, the equation becomes:
+   \[
+   h = \left( 15 + 23 + 47 + 11 + 4 + 95 \right) \mod 7
+   \]
+   \[
+   h = (195) \mod 7
+   \]
+   \[
+   h = 6
+   \]
+
+4. **Interpret the result**: Since \(h = 6\), and 6 corresponds to **Friday**.
+
+Thus, 15 August 1947 was a **Friday**, which aligns with the previous calculation using Python.
