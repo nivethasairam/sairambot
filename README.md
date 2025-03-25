@@ -1,6 +1,6 @@
 Sairam Canteen Chatbot
 This is a simple canteen chatbot built using HTML, CSS, and JavaScript. It allows users to interact with the chatbot inside a fixed chatbox. 
-The chatbot provides the canteen menu for each day, ensuring that users receive accurate responses based on the current day.
+The chatbot provides the canteen menu for each day, ensuring that users get responses based on the current day.
 Current Limitations: The chatbot responses are predefined and not dynamically generated with AI
 Features
 1, Fixed Chatbox Layout – Messages stay inside the chatbox, and scrolling is confined within the chatbox.
