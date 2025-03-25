@@ -1,4 +1,5 @@
 ## *Sairam Canteen Chatbot*
+----------------->[Visit Sairam CafeBot](https://sairam-cafebot.vercel.app/)
 This is a simple canteen chatbot built using HTML, CSS, and Vanilla JavaScript. It allows users to interact with the chatbot inside a fixed chatbox. 
 The chatbot provides the canteen menu for each day, ensuring that users get responses based on the current day.
 ## I give sample data from my canteen menu board. On Thursdays, it shows only vegetarian foods. On other days, it displays the normal available food. Users can also ask for the location.
